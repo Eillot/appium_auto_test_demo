@@ -54,7 +54,6 @@ def appium_desired_capabilities(platform_name=android_appium_platform_name,platf
 
 #appium客户端向appium server发起http网络请求
 def appium_send_request(desired_capabilities=appium_desired_capabilities(),appium_remote_url=url_webwebdriver_remote):
-
     #向appium server 发送
     pass
 
