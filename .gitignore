@@ -1,0 +1,14 @@
+#bin/sbin env
+#this is a file that you want to ignore fot git.
+
+/apps/*.apk
+/apps/*.ipa
+*.apk
+*.txt
+*.html
+*.pyc
+*.jpg
+/.README.md
+.idea/
+*.xml
+
