@@ -16,7 +16,7 @@ appium开发环境说明：
     1.Python Version 2.7.11 , IDE tooles for PyCharm 2.7.3 .
     2.Android SDK Version 23.0 , JDK 1.8 .
     3.Appium Version AppiumForWindows-1.4.0
-
+"""
 开源协议：
 Apache License-2.0
 
@@ -31,5 +31,5 @@ Apache License-2.0
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
+"""
 请勿用商业用途，侵权必究.
