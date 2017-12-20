@@ -1,6 +1,19 @@
 #!/usr/bin/env python
 # encoding: utf-8
 
+
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
 import os
 import sys
 from appium import webdriver
@@ -16,6 +29,7 @@ sys.path.append(os.path.abspath('%s../../' % sys.path[0]))
 @File    : PublicUiMoudle
 @Software: PyCharm
 """
+
 #获取当前目录被测app的绝对路径
 def get_abspath_apps(app):
 
@@ -25,13 +39,13 @@ def get_abspath_apps(app):
     """
     PATH = lambda p: os.path.abspath(
     os.path.join(os.path.dirname(__file__), p))
-    apps_abspath =PATH('../../apps/' + app)
+    apps_abspath =PATH('../apps/' + app)
 
     return apps_abspath
 
-#创建appium客户端端传递给appium server端的json文件
-def appium_desired_capabilities(platform_name=android_appium_platform_name,platform_version=android_appium_platform_version.get("v_4.4"),
-                                   device_name=android_appium_device_name,app_abspath=get_abspath_apps("joytest_1.7.5.1.apk"),
+#创建appium客户端传递给appium server端的json文件
+def appium_desired_capabilities(platform_name=android_appium_platform_name,platform_version=android_appium_platform_version.get("v_6.0"),
+                                   device_name=android_appium_device_name,app_abspath=get_abspath_apps("android_hybrid.apk"),
                                    newcommand_timeout=android_appium_newcommand_timeout):
 
     """
@@ -48,12 +62,29 @@ def appium_desired_capabilities(platform_name=android_appium_platform_name,platf
     desired_caps["deviceName"]=device_name
     desired_caps["app"]=app_abspath
     desired_caps["newCommandTimeout"]=newcommand_timeout
+    desired_caps["browserName"]="Chrome"
 
     #返回json文件
     return desired_caps
 
 #appium客户端向appium server发起http网络请求
-def appium_send_request(desired_capabilities=appium_desired_capabilities(),appium_remote_url=url_webwebdriver_remote):
-    #向appium server 发送
-    pass
+def appium_send_request(desired_capabilities=appium_desired_capabilities(),appium_remote_url=url_webdriver_remote,
+                        browser_profile=None,proxy=None,keep_alive=False):
+
+    """
+    :param desired_capabilities: 连接appium server端的真机（或者手机模拟器)设备信息json文件
+    :param appium_remote_url:连接appium server端的远程url地址
+    :param browser_profile:浏览器提交给appium server端的请求信息，headers,cookie等
+    :param proxy: 传入代理连接appium server 端（可一窥appium server端工作原理 ：D )
+    :param keep_alive: 是否同appium server建立固定时长的有效连接
+    """
+
+    #同appium server 建立session会话
+    appium_driver = webdriver.Remote(command_executor=appium_remote_url,desired_capabilities=desired_capabilities)
+    return appium_driver
+
+print appium_send_request()
+
+
+
 
