@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a86777e-e6f9-4336-9806-91f3909931b6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PublicModule/PublicUiMoudle.py" afterPath="$PROJECT_DIR$/PublicModule/PublicUiMoudle.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="appium_auto_test_demo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -11,9 +12,8 @@
     <file path="/ConfigurationData.py" changelist="6a86777e-e6f9-4336-9806-91f3909931b6" time="1513669000921" ignored="false" />
     <file path="/PublicUiMoudle.py" changelist="6a86777e-e6f9-4336-9806-91f3909931b6" time="1513669008930" ignored="false" />
     <file path="/Dummy.txt" changelist="6a86777e-e6f9-4336-9806-91f3909931b6" time="1513675377483" ignored="false" />
-    <file path="/.gitignore" changelist="6a86777e-e6f9-4336-9806-91f3909931b6" time="1513678884798" ignored="false" />
+    <file path="/.gitignore" changelist="6a86777e-e6f9-4336-9806-91f3909931b6" time="1513735064565" ignored="false" />
     <file path="D:/appium-client/python-client/test/functional/android/chrome_tests.py" changelist="6a86777e-e6f9-4336-9806-91f3909931b6" time="1513680182054" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="6a86777e-e6f9-4336-9806-91f3909931b6" time="1513680641600" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,10 +53,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PublicUiMoudle.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="PublicUiMoudle.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PublicModule/PublicUiMoudle.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="13" selection-start="1573" selection-end="1573" vertical-scroll-proportion="0.56199306">
+            <state line="43" column="7" selection-start="1302" selection-end="1302" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="12" selection-start="164" selection-end="164" vertical-scroll-proportion="0.40672073">
               <folding />
             </state>
           </provider>
@@ -86,8 +95,8 @@
         <option value="$PROJECT_DIR$/CaseForUiTesting/__init__.py" />
         <option value="$PROJECT_DIR$/CaseForUiTesting/android/__init__.py" />
         <option value="$PROJECT_DIR$/PublicModule/PublicCaseData.py" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/PublicModule/PublicUiMoudle.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -158,7 +167,21 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="CaseForUiTesting">
+            <PATH_ELEMENT USER_OBJECT="CaseForUITesting">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="appium_auto_test_demo">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT=".idea">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -205,7 +228,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="CaseForUiTesting" />
+              <option name="myItemId" value="CaseForUITesting" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -331,7 +354,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973261" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24973261" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -414,30 +437,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CaseForUiTesting/__init__.py">
+    <entry file="file://$PROJECT_DIR$/CaseForUITesting/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="16" selection-start="135" selection-end="135" vertical-scroll-proportion="0.25028968">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CaseForUiTesting/android/__init__.py">
+    <entry file="file://$PROJECT_DIR$/CaseForUITesting/android/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="16" selection-start="140" selection-end="140" vertical-scroll-proportion="0.25028968">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-4.955294">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="5" selection-start="93" selection-end="93" vertical-scroll-proportion="0.15643105">
           <folding />
         </state>
       </provider>
@@ -445,6 +454,13 @@
     <entry file="file://$PROJECT_DIR$/PublicModule/ConfigurationData.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="0" selection-start="297" selection-end="297" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -458,16 +474,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/__init__.py">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="16" column="54" selection-start="1499" selection-end="1499" vertical-scroll-proportion="0.5082353">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PublicModule/PublicUiMoudle.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="13" selection-start="1573" selection-end="1573" vertical-scroll-proportion="0.56199306">
+        <state line="43" column="7" selection-start="1302" selection-end="1302" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="12" selection-start="164" selection-end="164" vertical-scroll-proportion="0.40672073">
           <folding />
         </state>
       </provider>
