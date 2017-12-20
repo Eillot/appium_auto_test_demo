@@ -2,6 +2,9 @@
 #this is a file that you want to ignore fot git.
 
 .idea/
+/.idea/*
+.idea/*.xml
+/.idea/*.xml
 /apps/*.apk
 /apps/*.ipa
 *.apk
@@ -10,8 +13,5 @@
 *.pyc
 *.jpg
 /.README.md
-/.idea/*
-.idea/*.xml
-/.idea/*.xml
 *.xml
-
+*.jpg
