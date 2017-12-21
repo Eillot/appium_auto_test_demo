@@ -5,9 +5,6 @@
 /.idea/*
 .idea/*.xml
 /.idea/*.xml
-/apps/*.apk
-/apps/*.ipa
-*.apk
 *.txt
 *.html
 *.pyc
