@@ -31,7 +31,7 @@ sys.path.append(os.path.abspath('%s../../' % sys.path[0]))
 """
 
 #获取当前目录被测app的绝对路径
-def get_abspath_apps(app):
+def get_abspath_apps(app=android_hybrid_appname):
 
     """
     :param app: str类型app名称
@@ -44,9 +44,9 @@ def get_abspath_apps(app):
     return apps_abspath
 
 #创建appium客户端传递给appium server端的json文件
-def appium_desired_capabilities(platform_name=android_appium_platform_name,platform_version=android_appium_platform_version.get("v_6.0"),
-                                   device_name=android_appium_device_name,app_abspath=get_abspath_apps("android_hybrid.apk"),
-                                   newcommand_timeout=android_appium_newcommand_timeout):
+def appium_desired_capabilities(app_launchactivity_name,app_package_name,automation_name=android_automation_name,platform_name=android_appium_platform_name,
+                                    platform_version=android_appium_platform_version.get("v_6.0"),device_name=android_appium_device_name,
+                                    app_abspath=get_abspath_apps("android_hybrid.apk"),newcommand_timeout=android_appium_newcommand_timeout):
 
     """
     :param platform_name: 移动设备系统类型（anbdroid 或 ios）
@@ -54,7 +54,10 @@ def appium_desired_capabilities(platform_name=android_appium_platform_name,platf
     :param device_name:设备名称
     :param app_abspath: 当前目录下app的绝对路径
     :param newcommand_timeout: 连接appium server超时时间
-    :return: json文件
+    :param automation_name: 自动化测试框架名称（appium 或者selendroid）
+    :param app_package_name: app包名称
+    :param app_launchactivity_name: 启动app默认activity
+    :return: 提交给appium server端的json文件
     """
     desired_caps={}
     desired_caps["platformName"]=platform_name
@@ -62,7 +65,10 @@ def appium_desired_capabilities(platform_name=android_appium_platform_name,platf
     desired_caps["deviceName"]=device_name
     desired_caps["app"]=app_abspath
     desired_caps["newCommandTimeout"]=newcommand_timeout
-    desired_caps["browserName"]="Chrome"
+    desired_caps["automationName"]=automation_name
+    desired_caps["appPackage"]=app_package_name
+    desired_caps["appActivity"]=app_launchactivity_name
+
 
     #返回json文件
     return desired_caps
@@ -74,17 +80,15 @@ def appium_send_request(desired_capabilities=appium_desired_capabilities(),appiu
     """
     :param desired_capabilities: 连接appium server端的真机（或者手机模拟器)设备信息json文件
     :param appium_remote_url:连接appium server端的远程url地址
-    :param browser_profile:浏览器提交给appium server端的请求信息，headers,cookie等
+    :param browser_profile:浏览器名称
     :param proxy: 传入代理连接appium server 端（可一窥appium server端工作原理 ：D )
     :param keep_alive: 是否同appium server建立固定时长的有效连接
     """
-
     #同appium server 建立session会话
     appium_driver = webdriver.Remote(command_executor=appium_remote_url,desired_capabilities=desired_capabilities)
     return appium_driver
 
-print appium_send_request()
 
-
-
-
+# print appium_send_request() pass
+# print appium_desired_capabilities() pass
+# print get_abspath_apps()  pass

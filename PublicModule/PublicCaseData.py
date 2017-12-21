@@ -48,13 +48,20 @@ sys.path.append(os.path.abspath('%s../../' % sys.path[0]))
 使用appium模式做Ui自动化测试只支持android 4.4（包括4.4）及以上的版本，
 若想做android系统低于4.4的Ui自动化可以使用Selendroid模式
 """
+#--------------------------------appium desired capabilities for android------------------------------------
 android_appium_platform_name="Android" #设备名称
 android_appium_platform_version={"v_4.4":"4.4","v_5.0":"5.0","v_5.1":"5.1","v_6.0":"6.0","v_7.0":"7.0"} #定义为字典保存android系统版本
 android_appium_device_name = "Android Emulator" #默认值为android模拟器，若使用真机则使用真机设备名称
 android_hybrid_appname = "android_hybrid.apk" #当前项目apps目录下存放混合编程android应用的名称
+android_appium_newcommand_timeout = 240 #请求超时时间
+android_automation_name="Appium" #测试框架名称
+android_app_package_name="" #app包名称(出于软件安全考虑不予给出)
+android_app_launchactivity_name=""#默认启动的launch activity名称(出于软件安全考虑不予给出)
+
+#--------------------------------appium desired capabilities for iOS------------------------------------
+ios_appium_platform_name="iOS" #设备名称
 
 #appium client端连接appium server端的远程地址（注：目的是向appium server端提交json文件，告诉appium server连接设备的信息)
 url_webdriver_remote = user_app_host+"/wd/hub" #向本地appium server发送http请求的地址
-android_appium_newcommand_timeout = 240 #请求超时时间
 
 #ios设备的信息
