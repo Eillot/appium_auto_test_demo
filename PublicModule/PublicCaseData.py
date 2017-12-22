@@ -55,8 +55,8 @@ android_appium_device_name = "Android Emulator" #默认值为android模拟器，
 android_hybrid_appname = "android_hybrid.apk" #当前项目apps目录下存放混合编程android应用的名称
 android_appium_newcommand_timeout = 240 #请求超时时间
 android_automation_name="Appium" #测试框架名称
-android_app_package_name="" #app包名称(出于软件安全考虑不予给出)
-android_app_launchactivity_name=""#默认启动的launch activity名称(出于软件安全考虑不予给出)
+android_app_package_name="com.joyshebao.test"#app包名称
+android_app_launchactivity_name="io.dcloud.PandoraEntry"#默认启动的launch activity名称
 
 #--------------------------------appium desired capabilities for iOS------------------------------------
 ios_appium_platform_name="iOS" #设备名称

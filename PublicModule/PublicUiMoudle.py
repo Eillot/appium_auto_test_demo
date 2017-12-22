@@ -44,7 +44,8 @@ def get_abspath_apps(app=android_hybrid_appname):
     return apps_abspath
 
 #创建appium客户端传递给appium server端的json文件
-def appium_desired_capabilities(app_launchactivity_name,app_package_name,automation_name=android_automation_name,platform_name=android_appium_platform_name,
+def appium_desired_capabilities(app_launchactivity_name=android_app_launchactivity_name,app_package_name=android_app_package_name,
+                                    automation_name=android_automation_name,platform_name=android_appium_platform_name,
                                     platform_version=android_appium_platform_version.get("v_6.0"),device_name=android_appium_device_name,
                                     app_abspath=get_abspath_apps("android_hybrid.apk"),newcommand_timeout=android_appium_newcommand_timeout):
 
@@ -89,6 +90,7 @@ def appium_send_request(desired_capabilities=appium_desired_capabilities(),appiu
     return appium_driver
 
 
-# print appium_send_request() pass
-# print appium_desired_capabilities() pass
+# print appium_send_request()
+# print appium_send_request()
+print appium_desired_capabilities()
 # print get_abspath_apps()  pass

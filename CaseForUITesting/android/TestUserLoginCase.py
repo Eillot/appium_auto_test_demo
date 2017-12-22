@@ -30,7 +30,9 @@ from PublicModule.PublicUiMoudle import *
 class TestUserLoginCase(unittest.TestCase):
 
     def setUp(self):
-        pass
+
+        # 向appium server 端发起session会话并建立连接
+        self.devicer = appium_send_request(app_launchactivity_name=android_app_launchactivity_name,desired_capabilities=appium_desired_capabilities(app_package_name=android_app_package_name))
     def tearDown(self):
         pass
 
