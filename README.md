@@ -7,15 +7,15 @@ appium 自动化测试case demon
 2017/12/20
 
 开源项目描述：
-将appium官方给出的API同具体的业务结合起来重新报进行了封装.
+将appium官方给出的API同具体的业务结合起来重新进行了封装.
 
 开源项目目的：
 为正在自学appium的筒子们指明方向，起到抛砖迎玉的作用.
 
 appium开发环境说明：
-    1.Python Version 2.7.11 , IDE tooles for PyCharm 2.7.3 .
-    2.Android SDK Version 23.0 , JDK 1.8 .
-    3.Appium Version AppiumForWindows-1.4.0
+1.Python Version 2.7.11 , IDE tooles for PyCharm 2.7.3 .
+2.Android SDK Version 23.0 , JDK 1.8 .
+3.Appium Version AppiumForWindows-1.4.0
 
 开源协议：
 Apache License-2.0
