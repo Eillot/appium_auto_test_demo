@@ -63,5 +63,4 @@ ios_appium_platform_name="iOS" #设备名称
 
 #appium client端连接appium server端的远程地址（注：目的是向appium server端提交json文件，告诉appium server连接设备的信息)
 url_webdriver_remote = user_app_host+"/wd/hub" #向本地appium server发送http请求的地址
-
 #ios设备的信息
