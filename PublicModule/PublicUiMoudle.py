@@ -88,9 +88,3 @@ def appium_send_request(desired_capabilities=appium_desired_capabilities(),appiu
     #同appium server 建立session会话
     appium_driver = webdriver.Remote(command_executor=appium_remote_url,desired_capabilities=desired_capabilities)
     return appium_driver
-
-
-# print appium_send_request()
-# print appium_send_request()
-print appium_desired_capabilities()
-# print get_abspath_apps()  pass
